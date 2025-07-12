@@ -13,7 +13,7 @@ function Home() {
     const [newBlogs, setNewBlog] = useState([]);
     useEffect(() => {
         async function getRecentBlogs() {
-            const response = await fetch("http://localhost:3000/recent");
+            const response = await fetch("https://6870982b7ca4d06b34b7461b.mockapi.io/newarticle");
             const blogs = await response.json();
             // console.log(blogs);
             setNewBlog(blogs);
